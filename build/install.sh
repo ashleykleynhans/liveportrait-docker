@@ -11,12 +11,12 @@ pip3 install --no-cache-dir xformers==${XFORMERS_VERSION} --index-url ${INDEX_UR
 
 # Clone the git repo of LivePortrait and set version
 cd /
-git clone https://github.com/ashleykleynhans/LivePortrait.git
+git clone https://github.com/KwaiVGI/LivePortrait.git
 cd /LivePortrait
 git checkout ${LIVEPORTRAIT_COMMIT}
 
 # Install the dependencies for LivePortrait
-pip3 install -r requirements.txt --extra-index-url ${INDEX_URL}
+pip3 install -r /requirements.txt --extra-index-url ${INDEX_URL}
 
 # Download checkpoints
 huggingface-cli download KwaiVGI/LivePortrait \

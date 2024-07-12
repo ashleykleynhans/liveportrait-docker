@@ -12,7 +12,7 @@ ARG INDEX_URL
 ARG TORCH_VERSION
 ARG XFORMERS_VERSION
 ARG LIVEPORTRAIT_COMMIT
-COPY --chmod=755 build/install.sh ./
+COPY --chmod=755 build/* ./
 RUN /install.sh && rm /install.sh
 
 # Remove existing SSH host keys
