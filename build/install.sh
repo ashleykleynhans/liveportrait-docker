@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 # Create and use the Python venv
 python3 -m venv --system-site-packages /venv
