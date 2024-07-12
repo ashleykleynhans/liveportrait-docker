@@ -12,8 +12,8 @@ ARG INDEX_URL
 ARG TORCH_VERSION
 ARG XFORMERS_VERSION
 ARG LIVEPORTRAIT_COMMIT
-COPY --chmod=755 build/* ./
-RUN /install.sh && rm /install.sh && rm /download_checkpoints.py
+COPY --chmod=755 build/install.sh ./
+RUN /install.sh && rm /install.sh
 
 # Remove existing SSH host keys
 RUN rm -f /etc/ssh/ssh_host_*
