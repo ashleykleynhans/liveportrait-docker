@@ -33,6 +33,7 @@ variable "TORCH_VERSION" {
     default = "2.3.1"
 }
 
+# Can't use Python 3.11 - there are numpy errors
 variable "PYTHON_VERSION" {
     default = "3.10"
 }
