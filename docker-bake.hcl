@@ -34,7 +34,7 @@ variable "TORCH_VERSION" {
 }
 
 variable "PYTHON_VERSION" {
-    default = "3.11"
+    default = "3.10"
 }
 
 target "default" {
