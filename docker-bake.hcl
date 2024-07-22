@@ -10,7 +10,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "1.2.0"
+    default = "1.3.0"
 }
 
 variable "CU_VERSION" {
@@ -47,6 +47,6 @@ target "default" {
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
         TORCH_VERSION = "${TORCH_VERSION}+cu${CU_VERSION}"
         XFORMERS_VERSION = "0.0.27"
-        LIVEPORTRAIT_COMMIT = "54e50986b232fc3f382f20924cdff675c0ce729d"
+        LIVEPORTRAIT_COMMIT = "62e68abd430fc5e49993339b28bda095ec3f78ae"
     }
 }
