@@ -7,6 +7,11 @@
 
 </div>
 
+> [!IMPORTANT]
+> If you want to use the LivePortrait project for commercial purposes, you
+> should remove and replace InsightFace’s detection models to fully comply with
+> the MIT license.
+
 ## Installs
 
 * Ubuntu 22.04 LTS
