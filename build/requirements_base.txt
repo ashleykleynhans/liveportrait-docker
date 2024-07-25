@@ -1,5 +1,7 @@
 --extra-index-url https://download.pytorch.org/whl/cu121
 torch==2.4.0
+torchvision
+torchaudio
 
 numpy==1.26.4
 pyyaml==6.0.1
