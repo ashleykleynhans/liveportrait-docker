@@ -10,7 +10,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "1.3.1"
+    default = "1.4.0"
 }
 
 variable "CU_VERSION" {
@@ -22,7 +22,7 @@ variable "BASE_IMAGE_REPOSITORY" {
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "2.0.0"
+    default = "2.1.0"
 }
 
 variable "CUDA_VERSION" {
@@ -30,7 +30,7 @@ variable "CUDA_VERSION" {
 }
 
 variable "TORCH_VERSION" {
-    default = "2.3.1"
+    default = "2.4.0"
 }
 
 # Can't use Python 3.11 - there are numpy errors
