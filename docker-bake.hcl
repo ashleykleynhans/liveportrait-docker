@@ -10,7 +10,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "1.4.0"
+    default = "1.4.1"
 }
 
 variable "CU_VERSION" {
@@ -22,7 +22,7 @@ variable "BASE_IMAGE_REPOSITORY" {
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "2.1.0"
+    default = "2.1.1"
 }
 
 variable "CUDA_VERSION" {
@@ -46,7 +46,7 @@ target "default" {
         BASE_IMAGE = "${BASE_IMAGE_REPOSITORY}:${BASE_IMAGE_VERSION}-python${PYTHON_VERSION}-cuda${CUDA_VERSION}-torch${TORCH_VERSION}"
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
         TORCH_VERSION = "${TORCH_VERSION}+cu${CU_VERSION}"
-        XFORMERS_VERSION = "0.0.27.post1"
-        LIVEPORTRAIT_COMMIT = "d654a014da85e4b45d17b0c2016acc843a392149"
+        XFORMERS_VERSION = "0.0.27.post2"
+        LIVEPORTRAIT_COMMIT = "cf74ed3c16f9d0448cece636109aa47ee29527b5"
     }
 }
