@@ -22,7 +22,7 @@ variable "BASE_IMAGE_REPOSITORY" {
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "2.1.1"
+    default = "2.2.3"
 }
 
 variable "CUDA_VERSION" {
@@ -47,6 +47,6 @@ target "default" {
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
         TORCH_VERSION = "${TORCH_VERSION}+cu${CU_VERSION}"
         XFORMERS_VERSION = "0.0.27.post2"
-        LIVEPORTRAIT_COMMIT = "cf74ed3c16f9d0448cece636109aa47ee29527b5"
+        LIVEPORTRAIT_COMMIT = "3f394785fba66e9ab99b32cd72e53b6d89062340"
     }
 }
